@@ -2,8 +2,12 @@
   "name": "resume",
   "module": "index.ts",
   "type": "module",
+  "scripts": {
+    "tailwind": "bunx tailwindcss -i _style.css -o style.css --watch"
+  },
   "devDependencies": {
-    "@types/bun": "latest"
+    "@types/bun": "latest",
+    "tailwindcss": "^3.4.1"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
