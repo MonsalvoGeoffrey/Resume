@@ -7,10 +7,10 @@
     <script src="https://unpkg.com/hyperscript.org@0.9.12"></script>
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-background text-text w-[60vw] mx-auto">
+<body class="bg-background text-text lg:w-[60vw] w-[90vw] mx-auto">
     <p _="on click toggle .dark on <body />" class="fixed top-2 left-2 select-none">Switch theme</p>
-    <main class="my-8 grid grid-cols-2 gap-4">
-        <section class="bg-secondary rounded-lg p-4 shadow-lg">
+    <main class="my-8 grid md:grid-cols-3 grid-cols-1 gap-4">
+        <section class="rounded-lg p-4 shadow-lg bg-gradient-to-br from-primary to-accent">
             <h2 class="font-bold text-2xl italic">Contact</h2>
             <p>Monsalvo Geoffrey</p>
             <p>06 99 17 43 18</p>
@@ -18,7 +18,7 @@
             <p><a href="https://www.linkedin.com/in/geoffrey-monsalvo-9a1541252/">https://www.linkedin.com/in/geoffrey-monsalvo-9a1541252/</a></p>
             <p><a href="https://github.com/MonsalvoGeoffrey">https://github.com/MonsalvoGeoffrey</a></p>
         </section>
-        <section class="bg-secondary rounded-lg p-4 shadow-lg">
+        <section class="bg-secondary rounded-lg p-4 shadow-lg md:col-span-2">
             <h2 class="font-bold text-2xl italic">Résumé</h2>
             <p>
                 Jeune développeur web avec une année d'expérience, doté d'une solide compréhension des technologies front-end telles que HTML, CSS, et JavaScript, ainsi que dans les frameworks tels que React, Svelte et HTMX.
@@ -26,17 +26,41 @@
                 <br />Motivé par le désir de développer mes compétences techniques et de participer à des projets ambitieux.
             </p>
         </section>
-        <section class="bg-secondary rounded-lg p-4 shadow-lg">
+        <section class="bg-accent rounded-lg p-4 shadow-lg md:col-span-2">
             <h2 class="font-bold text-2xl italic">Compétences</h2>
             <ul>
                 <li><span class="font-bold">Language : </span>HTML, CSS, JavaScript, Python, LUA</li>
                 <li><span class="font-bold">Framework : </span>Vue, React, Svelte, HTMX, Tailwind</li>
-                <li><span class="font-bold">Outils : </span>Git, GitHub, VSCode, VIM</li>
-                <li><span class="font-bold"></span></li>
+                <li><span class="font-bold">Outils : </span>Git, GitHub, VSCode, VIM, ChatGPT</li>
+                <li><span class="font-bold">Soft Skills : </span>Résolution de problèmes, Adaptabilité, Souci du détail,
+                    Empathie</li>
+                <li><span class="font-bold">Langue Parlée : </span>Français (Natif), Anglais (B2)</li>
             </ul>
         </section>
-        <section class="bg-secondary rounded-lg p-4 shadow-lg">
+        <section class="bg-primary rounded-lg p-4 shadow-lg">
             <h2 class="font-bold text-2xl italic">Education</h2>
+            <ul class="list-disc list-inside">
+                <li><span class="font-bold">Bac Pro Système Electronique et Numérique</span> <span class="italic">[Niveau&nbsp;4]</span>
+                    <br /><span class="">Lycée Jean MONNET</span></li>
+                <li><span class="font-bold">Formation Développeur Web</span> <span class="italic">[Niveau&nbsp;5]</span><br /><span
+                        class="">OpenClassroom</span></li>
+            </ul>
+        </section>
+        <section class="bg-secondary rounded-lg p-4 shadow-lg md:col-span-3">
+            <h2 class="font-bold text-2xl italic">Experience</h2>
+            <ul class="list-inside list-disc">
+                <li><span class="font-bold">Vitirover</span> <span class="italic">[1 an]</span><br />
+                    <span class="">Développeur Web</span>
+                    <div class="ml-4">
+                        <h3 class="font-bold text-lg italic">Résponsabilité</h3>
+                        <ul class="list-inside list-disc">
+                            <li>Maintenance et mise à jour des sites web existants.</li>
+                            <li>Optimisation des performances des sites pour améliorer la vitesse de chargement et l'expérience utilisateur.</li>
+                            <li>Débogage et résolution des problèmes techniques.</li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
         </section>
     </main>
 </body>
